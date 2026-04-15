@@ -1,5 +1,5 @@
 import numpy as np
-class Neural_network:
+class Neural:
   def __init__(self, lr = 0.01, epoch = 1000.0):
     self.lr = lr
     self.epoch = epoch
