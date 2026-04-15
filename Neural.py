@@ -1,6 +1,4 @@
 import numpy as np
-
-
 class Neural:
     def __init__(self, lr=0.01, epochs=1000):
         """
