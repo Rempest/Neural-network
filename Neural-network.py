@@ -15,6 +15,15 @@ class Neural_network:
        db = (2/n_samples) * np.sum(y_pred - y)
        self.w -= self.lr * dw
        self.b -= self.lr * db
-      #i will be come back:)
+      if i % 100 == 0:
+        loss = np.mean((y - y_pred) ** 2)
+                print(f"Epoch {i}, Loss: {loss:.4f}")
+  def predict(self, X):
+      return self.w * X + self.b
+    
+
+
+        
+      
     
     
